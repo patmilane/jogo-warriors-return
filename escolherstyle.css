@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Titulos';
+    src: url("./Fontes/Cinzel-SemiBold.ttf"); /*fonte baixada e usada no menu*/
+}
+
+@font-face {
+    font-family: 'diferente';
+    src: url("./Fontes/IMFellEnglishSC-Regular.ttf"); /*fonte baixada e usada no menu*/
+}
+
+body{
+    background-image: url('./imagens/fundo0.png');
+    background-size:cover;
+}
+
+.guerreiras{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0;   
+}
+
+.guerreiras li{
+    display: inline-block;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer; 
+}
+
+img{
+    width: 75%;
+    background: rgba(42, 56, 68, 0.6);
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 8px rgb(32, 32, 32));
+    box-shadow: 1px 2px 7px rgba(4, 18, 22, 0.4);
+    transition: .2s ease-in-out;
+}
+
+li:hover{
+    transform: scale(1.1); /*usar ao inves do width, pois assim n quebra a pag*/
+}
+
+.escolha{
+    font-size: 50px;
+    font-family: 'diferente'; 
+    color: white;
+    text-align: center;       
+    padding: 20px;
+    max-width: 50%;
+    margin: auto;
+    background: rgba(22, 25, 29, 0.7);
+    box-shadow: 1px 2px 2px rgba(12, 17, 19, 0.8);
+
+}
+.escolha img{
+    width: 40px;
+    margin-left: 8px;
+    margin-bottom: -5px;
+}
+
+.escolha:hover{
+    background-color: rgb(6, 7, 7);
+    transition-duration: 2s;
+}
+
+@media(max-width: 700px){
+
+    .guerreiras{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30%
+    
+        
+    }
+    .guerreiras li{
+        text-align: center;
+        border-radius: 15px;
+        padding: 3%;
+    }
+
+    .escolha{
+        position: absolute;
+        bottom: 75%;
+        margin-left: 20%;
+        font-size: 30px;
+        max-width: 50%;
+    
+    }
+}
+
+
+

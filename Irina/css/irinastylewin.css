@@ -1,0 +1,109 @@
+  @font-face {
+    font-family: 'Titulos';
+    src: url("Cinzel-SemiBold.ttf"); 
+  }
+
+  html, body{
+    height: 100%;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url('../imagens/fundo1.jpg');
+    background-size:cover;
+}
+
+h1{  
+    display: flex;
+    justify-content: center;
+    font-family: 'Titulos';
+    color: white;
+    font-size: 50px;
+    margin-left: 17%;
+    margin-top: 10%;
+    text-shadow:  1px 1px 2px black;
+}
+
+.imagem img{
+    position: absolute;
+    width: 28%;
+    margin-top: -190px;
+    margin-left: 18px;
+
+}
+
+.texto{
+  background: rgba(8, 9, 10, 0.6);
+  width: 40%;
+  margin-left: 38%;
+  box-shadow: 1px 2px 7px rgba(4, 18, 22, 0.7);
+}
+
+.texto p{
+  font-size: 20px;
+  color: white;
+  margin-top: 15%;
+  padding: 20px;
+  width: 94%;
+  text-align: justify;
+}
+
+a{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Titulos';
+    margin-left: 51%;    
+    bottom: 18%;    
+    background-image: linear-gradient(to right, #161b31 0%, #344477  51%, #161f2a  100%);
+    padding: 15px 25px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+}
+
+ a:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+ }
+
+ .sword{
+   left: -13%;
+   top: 30%;
+ }
+
+ @media(max-width: 650px){
+
+
+  h1{
+    font-size: 130%;
+    margin-top: 30%;
+    margin-left: -2%;
+  }
+
+  .imagem img{
+    width: 32%;
+    margin-top: 80%; 
+  }
+  
+  .texto{
+    padding-right: 5%;
+    margin-left: 8%;
+    width: 80%;
+  }
+  
+  .texto p{
+    font-size: 18px;
+    text-align: center;
+    width: 94%;
+  }
+
+  a{
+    font-size: 20px;
+    margin-left: 32%;
+    margin-bottom: 25%;
+   }
+}

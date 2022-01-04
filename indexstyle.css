@@ -1,0 +1,125 @@
+  @font-face {
+    font-family: 'Titulos';
+    src: url("./Fontes/Cinzel-SemiBold.ttf"); /*fonte baixada e usada no menu*/
+  }
+
+  @font-face {
+    font-family: 'diferente';
+    src: url("./Fontes/IMFellEnglishSC-Regular.ttf"); /*fonte baixada e usada no menu*/
+  }
+
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body{
+    background-image: url('./imagens/fundo22.jpg');
+    background-size:cover;
+}
+
+h1 img{
+    margin-left: 80px;
+    width: 36.6%;
+}
+
+p{
+    color: white;
+    font-size: 180%;
+    font-family: 'diferente';
+    margin: 30px /*cima*/ 90px /*direita*/ 67px /*embaixo*/ 110px /*esquerda*/;
+    text-align: justify;
+}
+
+/*Efeito digitação*/
+.descricao{
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  animation: typing normal 2.5s steps(70) both;
+}
+
+.p2 {
+  margin-top: -4%;
+  animation-delay: 2.5s;
+}
+
+.p3 {
+  margin-top: -4%;
+  animation-delay: 4.7s;
+}
+/*fim efeito digitação*/
+
+/*botão*/
+div a{
+    
+    color: white;
+    text-decoration: none;
+    font-size: 270%;
+    font-family: 'Titulos';
+    margin-left: 820px;    
+    background-image: linear-gradient(to right, #16222A 0%, #344f77  51%, #16222A  100%);
+    padding: 15px 25px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+ a:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+ }
+
+ /*configuração do efeito de digitação?*/
+ @keyframes typing{
+   100%{
+     max-width: 100%;
+   }
+ }
+
+
+ /*Responsividade*/
+@media(max-width: 1150px){
+
+   div a{
+     margin-left: 13%;
+     font-size: 120%;
+   }
+
+   p{
+    font-size: 160%;
+    margin: 30px /*cima*/ 40px /*direita*/ 67px /*embaixo*/ 50px /*esquerda*/;
+  }
+
+  .descricao {
+    margin-bottom: 7%;
+    white-space: pre-wrap;
+    max-width: none;
+    animation: none;
+  }
+
+  .p3{
+    margin-bottom: 18%;
+  }
+}
+
+@media(max-width: 650px){
+
+  h1 {
+    text-align: center;
+    margin-left: -12%;
+    margin-top: 5%;
+  }
+ 
+ div a{
+  margin-left: 32%;
+  font-size: 130%;
+  }
+
+  p{
+    font-size: 120%;
+  }
+  
+}

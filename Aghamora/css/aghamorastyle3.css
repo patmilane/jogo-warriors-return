@@ -1,0 +1,106 @@
+
+@font-face {
+  font-family: 'diferente';
+  src: url("IMFellEnglishSC-Regular.ttf"); 
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+   
+}
+
+body{
+    background-image: url('../imagens/fundodragao2.jpg');
+    background-size:cover;
+}
+
+h1{  
+  position: absolute;
+  font-family: 'diferente';
+  color: white;
+  font-size: 290%;
+  margin-left: 40px;
+  margin-top: 4%;
+  text-shadow:  1px 1px 2px black;
+}
+
+ /*Efeito digitação*/
+
+.descricao{
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  animation: typing normal 3s steps(70) both;
+}
+
+.imagem img{
+  width: 37%;
+  margin-left: 64%;
+  margin-top: 72px;
+}
+
+.texto{
+  background: rgba(8, 9, 10, 0.6);
+  width: 60%;
+  margin-left: 20px;
+  box-shadow: 1px 2px 7px rgba(4, 18, 22, 0.7);
+}
+
+.texto p{
+  font-size: 20px;
+  color: white;
+  margin-top: -80%;
+  padding: 20px;
+  width: 94%;
+  text-align: justify;
+}
+
+button{
+  padding: 1%;
+  margin: 2% 0 3% 5%;  
+  color: white;
+  font-size: 100%;
+  background-image: linear-gradient(to right, #16222A 0%, #414b5a  51%, #0a0f13  100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #eee;
+}
+
+/*configuração do efeito de digitação?*/
+@keyframes typing{
+  100%{
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 650px){
+
+  h1{
+    font-size: 130%;
+  }
+
+  .imagem img{
+    width: 32%;
+    margin-left: 66%;
+    margin-top: 140%; 
+  }
+  
+  .texto{
+    width: 80%;
+    margin-left: 20px;  
+    margin-top: 15%;
+    padding-right: 5%;
+  }
+  
+  .texto p{
+    font-size: 18px;
+    color: white;
+    margin-top: -210%;
+    padding: 20px;
+    width: 94%;
+    text-align: justify;
+  }
+}
