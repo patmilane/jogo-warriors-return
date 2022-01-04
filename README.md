@@ -1,3 +1,3 @@
-# jogo
+# Projeto de jogo - Warrior's Return
 
-## para acessar o jogo: https://patriciamilane.github.io/jogo/
+## para acessar e jogar: https://patriciamilane.github.io/jogo/
