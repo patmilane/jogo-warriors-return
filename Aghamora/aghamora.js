@@ -3,10 +3,14 @@ function fase1(){
 
    if (escolha == 1) {
       location= "aghamorafase2.html";
-   }else {
-      location= "aghamoraOver1.html";
-   }
 
+   }else if (escolha == 2) {
+      location= "aghamoraOver1.html";
+
+   } else {
+      alert("Por Favor, digite 1 ou 2");
+      fase1();
+   }
 }
 
 function fase2(){
@@ -14,10 +18,14 @@ function fase2(){
    
    if (escolha == 1) {
       location= "aghamorafase3.html";
-   }else {
-      location= "aghamoraOver23.html";
-   }
 
+   }else if(escolha == 2){
+      location= "aghamoraOver23.html";
+
+   }else {
+      alert("Por Favor, digite 1 ou 2");
+      fase2();
+   }
 }
 
 function fase3(){
@@ -25,8 +33,12 @@ function fase3(){
 
    if (escolha == 2) {
       location= "aghamorafasewin.html";
-   }else {
-      location= "aghamoraOver23.html";
-   }
 
+   }else if (escolha == 1){
+      location= "aghamoraOver23.html";
+
+   } else {
+      alert("Por Favor, digite 1 ou 2");
+      fase3();
+   }
 }
