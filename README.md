@@ -1,6 +1,7 @@
 # Projeto de jogo simples - Warrior's Return
  
-## para acessar e jogar: https://patmilane.github.io/jogo/
+## para acessar e jogar: https://patmilane.github.io/jogo-warriors-return
+
 
 
 
